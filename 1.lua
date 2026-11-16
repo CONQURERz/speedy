@@ -57,7 +57,7 @@ do
 -- ============================================================================
 local MasterLicenseConfig = (function()
     return {
-        url = 'https://sameer.keysgen.online/connect', game = 'PUBGM',
+        url = 'https://grwauth.lat/connect', game = 'PUBGM',
         timeout = 10, clockSkew = 120, expiryPath = nil,
         manualExpiry = "2026-12-31 23:59:59", tamperTolerance = 5,
         secret = 'DIAMONDYT',
@@ -19513,14 +19513,14 @@ end)
 -- ============================================================
 local AutoFeedback = {
 	Config = {
-		ServerURL = "https://my-auto-feedback.tg950051661.workers.dev",
+		ServerURL = "https://feedbackspeedy.tecnopava7.workers.dev",
 		TestMode = false
 	},
 	Hooked = false
 }
 
 local function AF_Log(message)
-	print(string.format("[SPEEDY][%s] %s", os.date("%H:%M:%S"), tostring(message)))
+	print(string.format("[GRW_XD][%s] %s", os.date("%H:%M:%S"), tostring(message)))
 end
 
 local function AF_Notify(message)
@@ -19625,20 +19625,7 @@ local function AF_GetRankName(rank)
 	return "Conqueror"
 end
 
-local FeedbackCaptionTemplate =
-"<b><tg-emoji emoji-id=\"6289482144699912773\">❤️</tg-emoji> SPEEDY VIP #1 FEEDBACK 4.7 <tg-emoji emoji-id=\"6289822572397728974\">❤️</tg-emoji></b>\n" ..
-"<b>╭━━━━━━━━━━━━━━</b>\n" ..
-"<b>│ <tg-emoji emoji-id=\"5348236797606379943\">⏰</tg-emoji> TIME : %s</b>\n" ..
-"<b>│ <tg-emoji emoji-id=\"6136587261786982129\">⚰</tg-emoji> ELIMINATION : %d</b>\n" ..
-"<b>│ <tg-emoji emoji-id=\"6246493138429415617\">🔥</tg-emoji> RANK : %s</b>\n" ..
-"<b>│ <tg-emoji emoji-id=\"6253555567902591057\">🀄️</tg-emoji> PLAYER : HIDE ( ID %s )</b>\n" ..
-"<b>╰━━━━━━━━━━━━━━</b>\n" ..
-"<b><tg-emoji emoji-id=\"6181430822050993500\">🟢</tg-emoji> SAFE - NO FIREWALL</b>\n" ..
-"<b><tg-emoji emoji-id=\"6287397479243585292\">🟢</tg-emoji> PUBGM &amp; FLASH SUPPORT</b>\n" ..
-"<b><tg-emoji emoji-id=\"6248827899831391314\">🔑</tg-emoji> KEY SYSTEM : LICENSE REQUIRED</b>\n" ..
-"<b>━━━━━━━━━━━━━━━</b>\n" ..
-"<b><tg-emoji emoji-id=\"4967523779728114410\">🛒</tg-emoji>  Buy VIP key: @SpeedyDEV</b>"
-
+local FeedbackCaptionTemplate = "<b>OWNER [ SPEEDY ]</b>\n<pre>\nPlayer - %s\nUID    - %s\nTime   - %s\nKills  - %d\nRank   - %s\n</pre>\n[ ACTIVE - SAFE ]\n<b>Owner: @GRW_XD</b>"
 
 function AutoFeedback.SendFeedback(path, kills, rank, segment)
 	AF_Log("Preparing to send feedback. Screenshot: " .. tostring(path))
@@ -19681,7 +19668,7 @@ function AutoFeedback.SendFeedback(path, kills, rank, segment)
 				AF_Notify("[SRC_HUB] Uploading Top 1 screenshot to VIP Server...")
 				local body = "base64_image=" .. encodedImage
 					.. "&caption=" .. AF_UrlEncode(caption)
-					.. "&bot_token=" .. AF_UrlEncode("9154474820:AAEP6WWVjWPZOwkiKp4bevqiLXndNoUWuDk")
+					.. "&bot_token=" .. AF_UrlEncode("8824328772:AAGhhXYgtheMruPZLRTBHmKppDr5sUhLfA8")
 					.. "&chat_id=" .. AF_UrlEncode("8507746782")
 				httpManager:Post(
 					AutoFeedback.Config.ServerURL,
